@@ -17,8 +17,8 @@
 
 impl<'ole> super::ole::Reader<'ole> {
   pub(crate) fn read_sector(&self, sector_index: usize)
-    -> Result<(&[u8]), super::error::Error> {
-    let result: Result<(&[u8]), super::error::Error>;
+    -> Result<&[u8], super::error::Error> {
+    let result: Result<&[u8], super::error::Error>;
     let sector_size = self.sec_size.unwrap();
     let offset = sector_size * sector_index;
     let max_size = offset + sector_size;
