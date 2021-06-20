@@ -240,7 +240,7 @@ mod tests {
             if let Ok(mut slice) = ole.get_entry_slice(entry) {
                 let mut buf = vec![0u8; slice.len()];
                 let read_size = slice.read(&mut buf).unwrap();
-                let mut file = std::fs::File::create(format!("./assets/streams/{}.bin", entry.name())).unwrap();
+                let mut file = std::fs::File::create(format!("./assets/streams/{}.bin", entry.name().replace(|c: char| !c.is_alphanumeric(), ""))).unwrap();
                 println!("Real len: {}", slice.real_len());
                 file.write_all(&buf).unwrap();
                 assert_eq!(read_size, slice.real_len());
