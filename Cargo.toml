@@ -8,7 +8,7 @@ readme = "README.md"
 keywords = ["ole", "compound", "document", "file", "parser"]
 categories = ["parser-implementations", "parsing"]
 license = "WTFPL"
-repository = "https://github.com/zadlg/ole.git"
+repository = "https://github.com/jhg/ole-compound-document-parser.git"
 
 [lib]
 name = "ole_compound_document_parser"
