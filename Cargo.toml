@@ -1,5 +1,5 @@
 [package]
-name = "ole"
+name = "ole-compound-document-parser"
 version = "0.1.15"
 authors = ["Thomas BAILLEUX <thomas@bailleux.me>"]
 description = "Simple parser and reader for Microsoft Compound Document File."
@@ -11,6 +11,6 @@ license = "WTFPL"
 repository = "https://github.com/zadlg/ole.git"
 
 [lib]
-name = "ole"
+name = "ole_compound_document_parser"
 
 [dependencies]

@@ -92,7 +92,7 @@ impl std::fmt::Display for EntryType {
 /// # Basic Example
 ///
 /// ```
-/// use ole::Reader;
+/// use ole_compound_document_parser::Reader;
 ///
 /// let mut parser =
 ///       Reader::from_path("assets/Thumbs.db").unwrap();
@@ -242,7 +242,7 @@ impl std::fmt::Display for Entry {
 /// # Basic example
 ///
 /// ```
-/// use ole::Reader;
+/// use ole_compound_document_parser::Reader;
 /// use std::io::Read;
 /// let mut parser =
 ///       Reader::from_path("assets/Thumbs.db").unwrap();

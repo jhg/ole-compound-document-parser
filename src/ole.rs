@@ -24,7 +24,7 @@ use std;
 /// # Basic Example
 ///
 /// ```
-/// use ole::Reader;
+/// use ole_compound_document_parser::Reader;
 ///
 /// let mut reader =
 ///       Reader::from_path("assets/Thumbs.db").unwrap();
@@ -73,9 +73,9 @@ impl<'ole> Reader<'ole> {
     /// # Examples
     ///
     /// ```
-    /// use ole;
+    /// use ole_compound_document_parser;
     /// let mut my_resume = std::fs::File::open("assets/Thumbs.db").unwrap();
-    /// let mut parser = ole::Reader::new(my_resume).unwrap();
+    /// let mut parser = ole_compound_document_parser::Reader::new(my_resume).unwrap();
     /// ```
     pub fn new<T: 'ole>(readable: T) -> std::result::Result<Reader<'ole>, super::error::Error>
         where T: std::io::Read {
@@ -106,8 +106,8 @@ impl<'ole> Reader<'ole> {
     /// # Examples
     ///
     /// ```
-    /// use ole;
-    /// let mut parser = ole::Reader::from_path("assets/Thumbs.db").unwrap();
+    /// use ole_compound_document_parser;
+    /// let mut parser = ole_compound_document_parser::Reader::from_path("assets/Thumbs.db").unwrap();
     /// ```
     pub fn from_path(path: &str) -> Result<Reader, super::error::Error> {
         let f = std::fs::File::open(path).map_err(super::error::Error::IOError)?;
@@ -119,8 +119,8 @@ impl<'ole> Reader<'ole> {
     /// # Examples
     ///
     /// ```
-    /// use ole;
-    /// let mut parser = ole::Reader::from_path("assets/Thumbs.db").unwrap();
+    /// use ole_compound_document_parser;
+    /// let mut parser = ole_compound_document_parser::Reader::from_path("assets/Thumbs.db").unwrap();
     ///
     /// for entry in parser.iterate() {
     ///   println!("Entry {}", entry.name());

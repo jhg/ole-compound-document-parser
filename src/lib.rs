@@ -25,7 +25,7 @@
 //!
 //! ```
 //!
-//! use ole::Reader;
+//! use ole_compound_document_parser::Reader;
 //! use std::io::{Read, Write};
 //!
 //! let mut file = std::fs::File::open("assets/Thumbs.db").unwrap();
