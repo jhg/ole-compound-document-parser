@@ -1,7 +1,7 @@
 [package]
 name = "ole-compound-document-parser"
 version = "0.1.15"
-authors = ["Thomas BAILLEUX <thomas@bailleux.me>"]
+authors = ["Thomas BAILLEUX <thomas@bailleux.me>", "Jesus Hernandez <jesushdez@protonmail.com>"]
 description = "Simple parser and reader for Microsoft Compound Document File."
 homepage = "https://crates.io/crates/ole"
 readme = "README.md"
